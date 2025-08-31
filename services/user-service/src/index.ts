@@ -18,14 +18,13 @@ connectDB();
 
 
 // routes
-app.get('/health',(req,res)=>{
+app.get('/api/users/health',(req,res)=>{
   res.status(200).json({
     status:"User-service is running and healthy"
   })
-
-  app.use('/api/users',userRouter)
-  
 })
+
+ app.use('/api/users',userRouter)
 
 app.listen(PORT,()=>{
   console.log(`User-Service Started At http://localhost:${PORT}`);
