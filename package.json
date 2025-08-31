@@ -1,0 +1,15 @@
+{
+  "name": "first_microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-all": "concurrently \"npm run dev --prefix services/user-service\" \"npm run dev --prefix apiGateway/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
